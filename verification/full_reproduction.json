@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "release_files_checked": 7742,
+  "calibration": 90,
+  "policy_attempts": 540,
+  "raw_endpoints_reconstructed": true,
+  "exact_budgets_verified": true,
+  "omitted_course_sources": [
+    "sources/BAMAT207_PROBABILITY-AND-STATISTICS_ELA_1.0_84_BAMAT207_Probability and Statisics.pdf",
+    "sources/BAMAT207_PROBABILITY-AND-STATISTICS_ETH_1.0_84_BAMAT207_Probability and Statisics.pdf"
+  ],
+  "reproduction_run": true,
+  "numerical_csvs_reproduced": 9,
+  "png_figures_reproduced": 8,
+  "vector_figures_reproduced": 8
+}

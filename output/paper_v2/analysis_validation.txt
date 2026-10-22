@@ -1,0 +1,6 @@
+Paper-v2 R analysis complete
+R version 4.6.1 (2026-06-24 ucrt)
+Calibration: 90 (20 reused); validation attempts: 540
+Primary Fisher comparisons: 12, Holm family; stability descriptive
+Bootstrap intervals: pointwise; calibration and validation independently resampled
+First confirmation and finite-window stability are distinct; no equivalence inference

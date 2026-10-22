@@ -1,0 +1,30 @@
+{
+  "events": [
+    {
+      "event": "interruption_detected",
+      "observed_at_utc": "2026-10-15T16:15:38.192000+00:00",
+      "exact_shutdown_time_known": false,
+      "last_saved_status_at_utc": "2026-10-15T15:15:38.363656+00:00",
+      "completed_calibration": 90,
+      "completed_validation_constituents": 487,
+      "completed_attempts": 228,
+      "failed_runs": 0,
+      "prior_controller_pid": 27300,
+      "prior_training_parent_pid": 48788,
+      "processes_found_running": false
+    },
+    {
+      "event": "resumed",
+      "training_started_at_utc": "2026-10-15T16:16:15.655112+00:00",
+      "controller_pid": 40956,
+      "training_parent_pid": 9236,
+      "source_commit": "34e612ab5093348f3013efca278a6dd8d5819b38",
+      "remaining_validation_constituents": 773,
+      "workers": 3,
+      "cpu_threads_per_run": 4,
+      "settings_and_seed_manifest_changed": false,
+      "frozen_predictions_sha256": "c9e278195a02b58a4a60fe2e59ff9a4d92109d1fc1505406ecba63a9eb79c6af",
+      "recovery_note": "Completed runs are skipped; the original trainer restores existing same-configuration checkpoints where present. Physical unsaved work may repeat; logical run caps are unchanged."
+    }
+  ]
+}

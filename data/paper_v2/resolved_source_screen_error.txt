@@ -1,0 +1,5 @@
+Exception: D:\github preos\probandstatsproj\run_paper_v2.ps1:25
+Line |
+  25 |  … EXITCODE -ne 0){throw ('Python step failed: '+($stepArgs -join ' '))}
+     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Python step failed: -m grokking.paper_sources

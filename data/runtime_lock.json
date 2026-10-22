@@ -1,0 +1,5 @@
+{
+  "device": "cpu",
+  "torch_version": "2.11.0+cu128",
+  "cpu_threads": 4
+}

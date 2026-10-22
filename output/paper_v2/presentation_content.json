@@ -1,0 +1,204 @@
+{
+  "slides": [
+    {
+      "title": "Grokking Under a Fixed Budget",
+      "seconds": 20,
+      "notes": "This paper asks how much training a small learning program needs before it answers new questions correctly. We measure the variation across random starts and test one long attempt against several fresh starts. The follow-up uses smaller budgets and three fixed dataset splits. We report uncertainty and accept negative or inconclusive results.",
+      "sources": [
+        8
+      ]
+    },
+    {
+      "title": "What is grokking?",
+      "seconds": 60,
+      "notes": "Think of practising maths questions and then trying questions with different numbers. Memorization means doing well on the practice examples. Generalization means doing well on questions held back from practice. Grokking is the delayed improvement on these new questions after practice performance is already good. Accuracy is the percentage of correct answers. This analogy explains the measured pattern; it does not prove human-like understanding or permanent learning. Our computer task is simple arithmetic, so every correct answer is known exactly. Power and colleagues introduced the phenomenon; our project studies its timing and the chance of success within a budget.",
+      "sources": [
+        1,
+        8
+      ]
+    },
+    {
+      "title": "Our question and why we extended the study",
+      "seconds": 50,
+      "notes": "One update means one learning step using the practice data. A budget is the total number of these steps we can afford. A restart begins again from new random starting weights, rather than continuing the old model. We ask whether spending the same total steps on one attempt, two attempts or four attempts changes the chance that at least one learns. In the original validation at thirty thousand updates, every policy worked ten times out of ten. That is a valid result, but the generous budget made differences hard to see. We selected eight thousand and twelve thousand from the original completion curves, and disclosed that choice before the new experiments.",
+      "sources": [
+        3,
+        8
+      ]
+    },
+    {
+      "title": "The experiment in plain language",
+      "seconds": 70,
+      "notes": "The rule is addition modulo thirty one: add two numbers and keep the remainder after division by thirty one. Thirty plus four gives remainder three. There are nine hundred and sixty one ordered pairs. In the baseline, five hundred and seventy six are practice questions and three hundred and eighty five are new questions. A dataset split chooses which pairs go into each group. We use three fixed splits. A seed chooses repeatable random starting weights, which are the numbers the model adjusts. Weight decay is a control that gently shrinks these numbers; we keep it at one in the follow-up. Thirty calibration runs per split estimate completion probabilities; twenty old runs are reused once. Separate fresh runs make five hundred and forty budget attempts. The architecture and numerical settings stay fixed.",
+      "sources": [
+        4,
+        5,
+        6,
+        8
+      ]
+    },
+    {
+      "title": "How we count first success and longer stability",
+      "seconds": 60,
+      "notes": "This is a representative calibration run selected near the original-split median. Practice accuracy improves before new-question accuracy. An update is one learning step using all practice examples, and we check every twenty five updates. First success T requires at least ninety nine percent practice accuracy and ninety five percent new-question accuracy for three checks in a row. Here the final confirming check is at 4375 updates. The secondary measure needs twenty one checks, spanning five hundred updates. We count the final check, never the start of the streak, and never use observations beyond the run budget. Even the longer window does not mean that accuracy stays high forever.",
+      "sources": [
+        8
+      ]
+    },
+    {
+      "title": "How much do learning times vary?",
+      "seconds": 55,
+      "notes": "Each completion curve uses thirty calibration runs for one fixed split. At a chosen step, count how many have confirmed success and divide by thirty. Keep every unfinished run in the denominator. The original-split capped mean is about 5347 updates and the median about 4375. Capped means that if a run has not succeeded by thirty thousand, U records the limit; its eventual T is still unknown. Different curves reveal both random-start variation and differences among these fixed partitions. They do not represent all possible models or tasks. The paper includes the complete timing distributions and intervals.",
+      "sources": [
+        8
+      ]
+    },
+    {
+      "title": "Probability and statistical methods",
+      "seconds": 70,
+      "notes": "A Bernoulli outcome is one yes-or-no result: did this budget attempt succeed? A binomial count is the number of successes among independent attempts with the same setting. Exact confidence intervals show uncertainty from a finite sample. F of t is the single-run completion probability by step t. The restart formula is one minus the probability that every independent start fails. For group comparisons we report differences in success probabilities. The twelve planned Fisher tests compare each restart policy with one long run, and Holm adjustment accounts for considering twelve tests together. Bootstrap resampling provides a sensitivity view. We also use conservative exact bounds because a sample with all successes or all failures can make bootstrap uncertainty look too small.",
+      "sources": [
+        3,
+        7,
+        8
+      ]
+    },
+    {
+      "title": "Fresh results at two smaller budgets",
+      "seconds": 60,
+      "notes": "This graph shows the original split at the two fixed budgets, with thirty fresh attempts per policy in each budget. The side table gives the success counts. All policies in one budget spend the same total updates: one gets B, two get B divided by two each, and four get B divided by four each. Every allocated step is executed even if one run succeeds early. The counts come from independent validation seeds, not the calibration sample used for predictions. Read the size and direction of the differences, then explain that finite-sample intervals and the corrected tests determine how much evidence there is. A point estimate alone does not justify a universal winner.",
+      "sources": [
+        8
+      ]
+    },
+    {
+      "title": "Do the results depend on the dataset split?",
+      "seconds": 55,
+      "notes": "Here we show the eight-thousand-update comparison on all three fixed splits. The practice and new-question assignments change, while the model, optimizer and success rule remain the same. Every displayed policy group has thirty fresh attempts. The full paper also reports twelve-thousand-update results on all three splits; we are not showing only a successful condition. Repetition across splits makes the evidence more informative, but three partitions of one arithmetic task do not establish transfer to large models or natural-language data. Compare the pattern and its variation rather than assuming that matching ranks prove a universal rule.",
+      "sources": [
+        4,
+        8
+      ]
+    },
+    {
+      "title": "Predicted chance versus fresh observations",
+      "seconds": 65,
+      "notes": "Calibration gives a measured single-run completion curve for each split. Before validation, we freeze the input trace hashes and all predicted policy probabilities. The predictions use one minus one minus F of B divided by k, raised to k. The graph compares these frozen predictions with the fresh original-split observations at both budgets. These are separate samples. Prediction error therefore contains uncertainty from both calibration and validation; the paper resamples them independently and also provides exact bounds. A close match is useful evidence about this setting, not proof of a true distribution or perfect calibration at every possible budget.",
+      "sources": [
+        3,
+        8
+      ]
+    },
+    {
+      "title": "Brief confirmation and a 500-update window",
+      "seconds": 65,
+      "notes": "Both outcomes come from the same attempt, so they are correlated. The first rule confirms three successful checks; the longer rule confirms twenty one. The longer window must finish inside the same allocated budget. It receives no extra follow-up time. Its count cannot exceed the first-confirmation count. In the original main study, sixty two of eighty three generalized runs later dipped below ninety five percent held-out accuracy. That is why we distinguish first success from longer stability. The follow-up window is still finite and may be followed by another dip. These stability comparisons are secondary descriptive results, rather than another hidden family of significance tests.",
+      "sources": [
+        8
+      ]
+    },
+    {
+      "title": "What the paper establishes",
+      "seconds": 50,
+      "notes": "At eight thousand total updates, one long run succeeded twenty eight times out of thirty on every split. Four short runs succeeded twelve, nine and eleven times out of thirty. All three differences survived the correction for twelve planned comparisons. At twelve thousand updates, only the second-split four-run difference survived correction. No two-run comparison was detected, which does not prove equality. Giving each run too few steps can leave too little time for delayed learning. This conclusion applies to our model, task and three fixed splits. We report all intervals and distinguish brief confirmation from a longer window. Future research can test new tasks, more splits and longer accuracy windows.",
+      "sources": [
+        8
+      ]
+    },
+    {
+      "title": "Sources and contribution",
+      "seconds": 20,
+      "notes": "Grokking, timing prediction, restart schedules and numerical fragility have prior research. The paper credits these sources and the standard transformer and AdamW methods. Our contribution is the controlled experiment and its recorded results. The source record explains the limited local copied-phrase screen; an institutional similarity score still depends on the college checker.",
+      "sources": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "title": "Appendix A: a worked restart probability",
+      "seconds": 0,
+      "notes": "This is an illustration, not a measured result. If two independent attempts each have sixty percent success, each has forty percent failure. Both fail with probability zero point four times zero point four, or zero point one six. At least one succeeds with probability one minus zero point one six, or eighty four percent. To decide between this and one longer run we still need the longer run probability. Independence refers to random starts conditional on the fixed task and training setting.",
+      "sources": [
+        3,
+        7
+      ]
+    },
+    {
+      "title": "Appendix B: full validation counts",
+      "seconds": 0,
+      "notes": "Every entry shows the first-confirmation count and the five-hundred-update count, each out of thirty attempts. The two counts in an entry are paired endpoints from the same attempts, not independent replications. The six rows cover every split and budget. The paper and supplement provide exact probability intervals, the twelve corrected comparisons, candidate timing fits, exploratory syllabus analyses and all limitations.",
+      "sources": [
+        8
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": 1,
+      "label": "Power et al. (2022)",
+      "title": "Grokking: Generalization Beyond Overfitting on Small Algorithmic Datasets",
+      "url": "https://arxiv.org/abs/2201.02177",
+      "pdf": "https://arxiv.org/pdf/2201.02177",
+      "status": "Preprint"
+    },
+    {
+      "id": 2,
+      "label": "Truong et al. (2026)",
+      "title": "First-Passage Prediction of Grokking Delay: A Calibrated Law under AdamW with Causal Validation",
+      "url": "https://arxiv.org/abs/2605.18845",
+      "pdf": "https://arxiv.org/pdf/2605.18845",
+      "status": "Preprint"
+    },
+    {
+      "id": 3,
+      "label": "Streeter, Golovin and Smith (2007)",
+      "title": "Restart Schedules for Ensembles of Problem Instances",
+      "url": "https://www.cs.cmu.edu/~dgolovin/papers/aaai07b.pdf",
+      "pdf": "https://www.cs.cmu.edu/~dgolovin/papers/aaai07b.pdf",
+      "status": "Research paper"
+    },
+    {
+      "id": 4,
+      "label": "Ootani (2026)",
+      "title": "Grokking Is Conditional and Fragile: A Fully-Tractable, Multi-Seed Study at 12K Parameters",
+      "url": "https://arxiv.org/abs/2607.05104",
+      "pdf": "https://arxiv.org/pdf/2607.05104",
+      "status": "Preprint"
+    },
+    {
+      "id": 5,
+      "label": "Loshchilov and Hutter (2019)",
+      "title": "Decoupled Weight Decay Regularization",
+      "url": "https://arxiv.org/abs/1711.05101",
+      "pdf": "https://arxiv.org/pdf/1711.05101",
+      "status": "ICLR 2019"
+    },
+    {
+      "id": 6,
+      "label": "Vaswani et al. (2017)",
+      "title": "Attention Is All You Need",
+      "url": "https://arxiv.org/abs/1706.03762",
+      "pdf": "https://arxiv.org/pdf/1706.03762",
+      "status": "NeurIPS 2017"
+    },
+    {
+      "id": 7,
+      "label": "Official supplied BAMAT207 syllabus, version 1",
+      "title": "Probability and Statistics: theory and embedded laboratory",
+      "url": "sources/; docs/SYLLABUS_MAP.md",
+      "status": "Course specification"
+    },
+    {
+      "id": 8,
+      "label": "Project paper-v2 evidence",
+      "title": "Frozen calibration and fresh fixed-budget validation",
+      "url": "data/paper_v2/; output/paper_v2/"
+    }
+  ]
+}

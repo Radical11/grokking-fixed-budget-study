@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "reviewed_at_utc": "2026-10-21T19:42:36.747808+00:00",
+  "ieee_pages": 6,
+  "brief_pages": 2,
+  "slides": 10,
+  "slide_pdf": "Pixel-identical to reviewed, reimported final-slide images",
+  "review_scope": "Every report page and slide individually inspected. Final report pages 1 and 6 rechecked after correcting reference order and years. No clipping, broken equations or unreadable result labels found.",
+  "checked_sha256": {
+    "output/assessments/Assessment9_IEEE_Report.pdf": "54c6e8cf960bef58b923ff2bd8a4b39ecaa539d3a3395c78c65fdf3b1b125bb0",
+    "output/assessments/assessment10_final/Assessment10_Final.pptx": "d756a3a6f7f5193745e687cbaa458069afe21acd4cabb5718403138d6c2c4bf0",
+    "output/assessments/assessment10_final/Assessment10_Final.pdf": "1b220799ecc121de79927099b941781a8dac80c2c254274b1862ea8367529821",
+    "output/assessments/assessment10_final/explanation.pdf": "09eb1d5285119223f9b8c3472eca4818391e75afdc2ec648b4a7fa08fb758443"
+  },
+  "native_powerpoint_open_tested": false,
+  "final_metadata_checked_at_utc": "2026-10-21T19:44:18.116915+00:00"
+}

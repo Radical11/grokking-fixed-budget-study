@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "reviewed_at_utc": "2026-10-15T19:01:46.008346+00:00",
+  "reviewer": "Codex visual inspection of rendered pages, imported slide PNGs and both figure formats",
+  "paper_pages": 8,
+  "supplement_pages": 4,
+  "slides": 15,
+  "png_figures": 8,
+  "vector_figures": 8,
+  "checks": [
+    "Every paper and supplement page inspected for readable prose, captions, tables, margins and footer clearance.",
+    "Every reimported slide inspected; restart exponent and arithmetic symbols visible, charts and tables readable.",
+    "All eight PNG and vector-PDF figures inspected; crowded capped-time axis labels repaired and reinspected.",
+    "Final paper page 2 and supplement page 1 reinspected after runtime disclosure; other page pixels unchanged.",
+    "Final slide PDF verified to contain the exact reviewed imported slide pixels."
+  ],
+  "checked_sha256": {
+    "output/paper_v2/paper.pdf": "5c9af89b7522c6541027d643c876abb61fc73ed4258b5cc8e728abb8a2ffc41c",
+    "output/paper_v2/supplement.pdf": "50e394efe97ed5c3cea3ea269d74aa0242cd3d3dd8ad62afab2adff6cf2ddcda",
+    "output/paper_v2/presentation.pptx": "bd95fa2bf8d059f3b359716844d780bcbc7b27614744550053ac97ecf6cfcb9d",
+    "output/paper_v2/presentation.pdf": "fe0c72709b416d343edd35e63f27e8e21207aaea75604bd09181b00bd2a5fbe1",
+    "output/paper_v2/learning_delay.png": "585f24b8bb68163117f90f4f6d95e2aa1e47927a6f06a35190426b5f993bc921",
+    "output/paper_v2/learning_delay.pdf": "14eb671b526951098ab46de0f278a1f14096cb231e7eb295c5a7341d0c1304d2",
+    "output/paper_v2/timing_variation.png": "295a340563194907ddd2b75b2a835d59a8b3396cad3b721e15cc83238bce049c",
+    "output/paper_v2/timing_variation.pdf": "79bbba86d4cef31414e63faac5a5d282f29288bdcde312eae56a002d8285d11c",
+    "output/paper_v2/completion_curves.png": "96d647f5a156afda33411fa3eed5cb3fce4f668dfdfd4cc789450f528c6d5b28",
+    "output/paper_v2/completion_curves.pdf": "db9a2f8de522efa0e9f60255278c5b2c36bc2c90ebd859194339515d9a2aaf13",
+    "output/paper_v2/policy_validation.png": "b8c9ed4698c50cb27ed937a89f63121c51597b8aab07846d48933aee89fcc605",
+    "output/paper_v2/policy_validation.pdf": "e2436d2fb4e8e662bfd289c008a653b42cdf25cb67603ea8f0ca7337d36a7131",
+    "output/paper_v2/risk_differences.png": "424bf6f001671218a18f4741b1769153b32f1dcb06cd72349ad3feee1d1aa66b",
+    "output/paper_v2/risk_differences.pdf": "4bc957e38f2a202d1258d701c02dd8ed9aa69b9c0d0788a7573d9926f799d5cd",
+    "output/paper_v2/stability_comparison.png": "7dcc8feb70e31eee7df70a4cb069a2675dc91599477ff8d4445a04fd45d6db6a",
+    "output/paper_v2/stability_comparison.pdf": "de82b51a0d2731a63eed81542c9d7f0c0fb89b3aa88c4f20486bf240a9df3dce",
+    "output/paper_v2/distribution_fits.png": "2df389c4f5a3fb8108b0fcbdd2543fb6ae9246671dfcabf27f452e1936da84cf",
+    "output/paper_v2/distribution_fits.pdf": "cdaa8a035b20e7d7c273c4bbae76025597c68b378128e82e3ff1d583fa3505ca",
+    "output/paper_v2/legacy_settings.png": "33d2b9347b6c81807695f772c46fe2da362228297e546bf29dcabdffa9660a5d",
+    "output/paper_v2/legacy_settings.pdf": "b1fc65fcbe47078ed2cf37f075f88ad592ad2f7081205b330ed593084122d845"
+  },
+  "native_powerpoint_application_open_tested": false,
+  "remaining_submission_steps": [
+    "Replace editable student identity fields.",
+    "Run the official college similarity checker when specified."
+  ]
+}

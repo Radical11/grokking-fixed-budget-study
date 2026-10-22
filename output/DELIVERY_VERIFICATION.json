@@ -1,0 +1,19 @@
+{
+  "verified_date": "2026-10-14",
+  "verified_input_commit": "58201ae",
+  "review1": {"pages": 5, "manifest_inputs": 63},
+  "review2": {"pages": 7, "manifest_inputs": 414},
+  "working_hash_mismatches": 0,
+  "committed_blob_hash_mismatches": 0,
+  "completed_experimental_runs": 199,
+  "finite_loss_and_accuracy_traces": 199,
+  "accuracy_range_verified": [0, 1],
+  "policy_attempts": 30,
+  "logical_updates_per_attempt": 30000,
+  "raw_trace_audit": "passed",
+  "automated_tests_passed": 21,
+  "final_report_visual_inspection": "all 7 pages",
+  "device": "cpu",
+  "cuda_training_verified": false,
+  "physical_recovery_overhead_measured": false
+}

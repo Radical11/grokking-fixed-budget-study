@@ -1,0 +1,96 @@
+{
+  "screen": "Exact contiguous 8-word and 12-word windows after lowercase/alphanumeric normalization",
+  "sources": [
+    {
+      "id": 1,
+      "label": "Power et al. (2022)",
+      "url": "https://arxiv.org/pdf/2201.02177",
+      "sha256": "305dbd1256e1ac198dde517dda42b4f0a7eb9a9d3f4c03527c125b03eb9c62fc",
+      "pages": 10,
+      "status": "read"
+    },
+    {
+      "id": 2,
+      "label": "Truong et al. (2026)",
+      "url": "https://arxiv.org/pdf/2605.18845",
+      "sha256": "55fd13802a05e2ff55174a716a229032b27a604455502096a0aef135c4a3bef8",
+      "pages": 51,
+      "status": "read"
+    },
+    {
+      "id": 3,
+      "label": "Streeter et al. (2007)",
+      "url": "https://www.cs.cmu.edu/~dgolovin/papers/aaai07b.pdf",
+      "sha256": "9d8a83d5732b5144e61a6553d2f3dba8170b6e77509acd53995c086fa4b4b091",
+      "pages": 7,
+      "status": "read"
+    }
+  ],
+  "matches": [
+    {
+      "unit": "submission_body",
+      "source_id": 1,
+      "eight_word_windows": 0,
+      "twelve_word_windows": 0,
+      "examples": []
+    },
+    {
+      "unit": "submission_body",
+      "source_id": 2,
+      "eight_word_windows": 0,
+      "twelve_word_windows": 0,
+      "examples": []
+    },
+    {
+      "unit": "submission_body",
+      "source_id": 3,
+      "eight_word_windows": 0,
+      "twelve_word_windows": 0,
+      "examples": []
+    },
+    {
+      "unit": "slide_body",
+      "source_id": 1,
+      "eight_word_windows": 0,
+      "twelve_word_windows": 0,
+      "examples": []
+    },
+    {
+      "unit": "slide_body",
+      "source_id": 2,
+      "eight_word_windows": 0,
+      "twelve_word_windows": 0,
+      "examples": []
+    },
+    {
+      "unit": "slide_body",
+      "source_id": 3,
+      "eight_word_windows": 0,
+      "twelve_word_windows": 0,
+      "examples": []
+    },
+    {
+      "unit": "spoken_notes",
+      "source_id": 1,
+      "eight_word_windows": 0,
+      "twelve_word_windows": 0,
+      "examples": []
+    },
+    {
+      "unit": "spoken_notes",
+      "source_id": 2,
+      "eight_word_windows": 0,
+      "twelve_word_windows": 0,
+      "examples": []
+    },
+    {
+      "unit": "spoken_notes",
+      "source_id": 3,
+      "eight_word_windows": 0,
+      "twelve_word_windows": 0,
+      "examples": []
+    }
+  ],
+  "official_similarity_score": null,
+  "limitations": "Only the three cited PDFs were screened. No internet-wide, student-submission database, semantic paraphrase, source-code plagiarism or AI-authorship detector was used. Text extraction and normalization can miss overlaps. Bibliographic titles/URLs were excluded from slide-body comparison; the submission bibliography was excluded. Mathematical notation is not a prose originality claim."
+}

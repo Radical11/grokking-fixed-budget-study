@@ -1,0 +1,30 @@
+{
+  "protocol_version": "1.0",
+  "modulus": 31,
+  "embedding_dim": 64,
+  "heads": 4,
+  "ff_dim": 128,
+  "learning_rate": 0.003,
+  "betas": [
+    0.9,
+    0.98
+  ],
+  "eval_every": 25,
+  "checkpoint_every": 500,
+  "train_threshold": 0.99,
+  "test_threshold": 0.95,
+  "consecutive": 3,
+  "split_seed": 20261015,
+  "max_updates": 2000,
+  "delayed_ratio": 3.0,
+  "delayed_min_gap": 200,
+  "device": "cpu",
+  "cpu_threads": 4,
+  "cuda_graphs": true,
+  "precision": "float32; TF32 disabled",
+  "stage": "validation",
+  "run_id": "pv2_val_s20261015_b8000_k4_a13_j1",
+  "train_fraction": 0.6,
+  "weight_decay": 1.0,
+  "init_seed": 200983
+}

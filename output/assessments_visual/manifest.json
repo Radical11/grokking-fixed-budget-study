@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "source_study_commit": "4190812ae10d376df0c68a55741898df2fd3000a",
+  "previous_assessment_commit": "2c5e984a08c8ebf279a49ee6eca2205fc35a7951",
+  "files": {
+    "output/assessments_visual/.gitattributes": "40e1bcf1e11ca15ec98e743ef1903f38930391a2d707f053a55396bff48f5e32",
+    "output/assessments_visual/Assessment10_Visual.pdf": "f02ecf261a62ea269cb0f415489fb1457f3b89a035008b45eafbcce205912050",
+    "output/assessments_visual/Assessment10_Visual.pptx": "f73d038dd64acdf26c57fde957ade71bff6f29d98c0a886396b2215196b2092f",
+    "output/assessments_visual/Assessment10_Visual_Explanation.pdf": "ac8a7133b741dd3fc013f2d51a808bc53749e799345b12b288c30ccc29708eba",
+    "output/assessments_visual/assessment9_ieee/figures/learning_delay.pdf": "14eb671b526951098ab46de0f278a1f14096cb231e7eb295c5a7341d0c1304d2",
+    "output/assessments_visual/assessment9_ieee/figures/policy_validation.pdf": "e2436d2fb4e8e662bfd289c008a653b42cdf25cb67603ea8f0ca7337d36a7131",
+    "output/assessments_visual/assessment9_ieee/figures/risk_differences.pdf": "4bc957e38f2a202d1258d701c02dd8ed9aa69b9c0d0788a7573d9926f799d5cd",
+    "output/assessments_visual/assessment9_ieee/figures/stability_comparison.pdf": "de82b51a0d2731a63eed81542c9d7f0c0fb89b3aa88c4f20486bf240a9df3dce",
+    "output/assessments_visual/assessment9_ieee/figures/workflow.pdf": "e4f9b6c5f3ad8ea1bc938e7b5e0368464e61ee16ddaed4a1eb4df4184f1583e4",
+    "output/assessments_visual/assessment9_ieee/IEEEtran.cls": "da751920a317ed318b7b5cd7fa585a6cc7d28502d457856382e9be24b10a3bd7",
+    "output/assessments_visual/assessment9_ieee/main.pdf": "a69a4b471d51eab408a1724a7a02f37e044c977c2ff4e047a4ba9269aa22742e",
+    "output/assessments_visual/assessment9_ieee/main.tex": "b20812a0af5607be930dc4ebda4d8f13a14fefdeeec81897a5e14ad016f8275b",
+    "output/assessments_visual/assessment9_ieee/references.bib": "8cffd7a6e68900b0352e3e5ca49eee33d5b836d417b5e37222e7a9c3ae1b1081",
+    "output/assessments_visual/assessment9_ieee/TEMPLATE_SOURCE.md": "c08d8fc88697d97e2ef2fab0078b1f21d41088e665869fa695a9f32e22682d43",
+    "output/assessments_visual/Assessment9_IEEE_Visual_Report.pdf": "a69a4b471d51eab408a1724a7a02f37e044c977c2ff4e047a4ba9269aa22742e",
+    "output/assessments_visual/Assessment9_Visual_LaTeX_Source.zip": "f97525d9c2f04f14da4ffd987fab3d8b851754a5dd32c1a68fa4ad9d9e8c03e3",
+    "output/assessments_visual/README.md": "3f6b195678034e7f7f82b1fbc31e6e0e28c9852122201c80c0285d292b121357",
+    "output/assessments_visual/source_overlap.json": "04f969d45b71189d62eef238bf41aeef97fa8ebe12cb996c59eb326edfc4dcad",
+    "output/assessments_visual/speaker_notes.md": "05e7fd42d6fbca1cf92df4bfaef8d600cd85834b7c5bda48f24a4e93fc477942",
+    "output/assessments_visual/visual_review.json": "69a56eb7d978b753525a9432ba9a6d9bd718cdc8fc5e3b4824e80ca816c82e95",
+    "scripts/assessments_visual/build_written.py": "9b9d766df37496bcc33c53540fd891f6204bc6e47f3ea474f471148aee5b3b1a",
+    "scripts/assessments_visual/finalize_presentation.mjs": "bd7d8d3e99697e49988a092b69b498f109dd2cd4ccf3c3a1c5d81ab5b8589b9f",
+    "scripts/assessments_visual/presentation.mjs": "b98b7bde0758ef9e283aa98a94faf3e6fa685942aeede15a6e80ff2488b59646",
+    "scripts/assessments_visual/verify.py": "3ff8369f9a23636cdccb1f6ea6577e75eeb3c73a828967f25cb5833d41b0a27c"
+  }
+}

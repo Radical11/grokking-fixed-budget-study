@@ -1,0 +1,2 @@
+"run_id","cohort","split_seed","replicate","init_seed","max_updates","total_budget","k","attempt","component","reused","source_path","status","completed_updates","first_time","first_event","stability_time","stability_event","memorization_time","relapsed","elapsed_seconds","error","trace_sha256"
+"main_f0.6_w1_s11113","calibration",20261013,13,11113,30000,NA,NA,NA,NA,"True","data/runs/main/main_f0.6_w1_s11113","completed",30000,4375,TRUE,5250,TRUE,225,"True",198.911007800001,NA,"216a26912c7369f91198be1ce5a947a228c00443dfe3475a9a0f3fd78af5a24a"

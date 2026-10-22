@@ -1,0 +1,5 @@
+Analysis completed by R
+R version: R version 4.6.1 (2026-06-24 ucrt)
+Completed main runs: 120
+Baseline n: 20
+Representative trace: main_f0.6_w1_s11113

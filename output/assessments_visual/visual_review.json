@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "reviewed_at_utc": "2026-10-22T06:08:28.325065+00:00",
+  "slides": 10,
+  "brief_pages": 2,
+  "ieee_pages": 6,
+  "review": "Every final page and slide inspected. Revised timeline labels rechecked; all other final slide pixels match the reviewed prior revision. Workflow arrow direction, label clearance, equations, chart units and readable result values checked.",
+  "checked_sha256": {
+    "output/assessments_visual/Assessment10_Visual.pptx": "f73d038dd64acdf26c57fde957ade71bff6f29d98c0a886396b2215196b2092f",
+    "output/assessments_visual/Assessment10_Visual.pdf": "f02ecf261a62ea269cb0f415489fb1457f3b89a035008b45eafbcce205912050",
+    "output/assessments_visual/Assessment10_Visual_Explanation.pdf": "ac8a7133b741dd3fc013f2d51a808bc53749e799345b12b288c30ccc29708eba",
+    "output/assessments_visual/Assessment9_IEEE_Visual_Report.pdf": "a69a4b471d51eab408a1724a7a02f37e044c977c2ff4e047a4ba9269aa22742e"
+  },
+  "native_powerpoint_open_tested": false
+}

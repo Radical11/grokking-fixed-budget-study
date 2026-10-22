@@ -1,0 +1,13 @@
+# Follow-up data dictionary
+
+The existing `docs/DATA_DICTIONARY.md` still describes original data. This version uses a separate root to prevent aggregate mixing.
+
+`seed_manifest.csv` has one row per planned source observation or new training run (1,350 rows). `cohort` is calibration or validation; `reused` explicitly identifies 20 original baseline runs. `source_path` points to the actual recorded run directory. `split_seed`, `init_seed`, `max_updates`, `total_budget`, `k`, `attempt` and `component` identify the exact experimental allocation. Empty policy fields are not applicable to calibration.
+
+`run_summary.csv` combines planned identities with execution and reconstructed outcome fields. `status` distinguishes pending/paused/failed/completed execution. For completed training, `first_time` and `stability_time` are unknown blanks if their confirmation was not observed, and the corresponding event flags are false. Pending records can also have blank outcome fields; check execution status before interpreting them. `completed_updates` measures logical trajectory updates; `trace_sha256` identifies the exact saved evaluation trace. `elapsed_seconds` has the documented recovery/contention limits. Never infer an unknown completion time from a completed training status.
+
+`attempt_summary.csv` has 540 planned budget-attempt rows. A completed row requires all k constituents to finish exactly their allocations. `first_success` and `stability_success` are blank until the attempt completes, then indicate whether any constituent confirms within its cap. `allocated_updates` and `completed_updates` must both equal `total_budget` for a completed attempt. `run_ids` links the constituent records. An incomplete or technically failed attempt is not converted into a negative success outcome.
+
+`calibration_freeze.json` hashes all calibration traces and the locked protocol inputs; `frozen_predictions.csv` holds the 36 predictions (3 splits x 2 budgets x 3 policies x 2 endpoints). The freeze precedes validation. `runtime_lock.json` retains the CPU/PyTorch/thread configuration. Individual raw trace columns are update, practice/held-out losses and practice/held-out accuracy proportions, as documented in the original dictionary.
+
+`status.json`, `session_progress.json`, `active_phase.json` and `pipeline_status.json` are progress records; use the read-only status command while collection is active. Checkpoints support local resumption and are not versioned. The statistical unit for a policy is a complete budget attempt, not one of its k constituents. Two endpoints on one attempt are not two independent attempts.

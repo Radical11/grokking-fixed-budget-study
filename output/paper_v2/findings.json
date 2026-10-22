@@ -1,0 +1,30 @@
+{
+  "primary_holm_significant": 4,
+  "primary_tests": 12,
+  "calibration_events": 90,
+  "calibration_stability_events": 90,
+  "original_split_8000": [
+    {
+      "k": 1,
+      "successes": 28,
+      "n": 30,
+      "ci_low": 0.779264598477038,
+      "ci_high": 0.991821865539344
+    },
+    {
+      "k": 2,
+      "successes": 23,
+      "n": 30,
+      "ci_low": 0.577163477021781,
+      "ci_high": 0.90066213504198
+    },
+    {
+      "k": 4,
+      "successes": 12,
+      "n": 30,
+      "ci_low": 0.226557648828594,
+      "ci_high": 0.593965069948181
+    }
+  ],
+  "best_candidate": "Gamma"
+}

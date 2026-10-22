@@ -1,0 +1,23 @@
+{
+  "version": "paper-v2.0",
+  "archive_commit": "d8ffc56dfb0805ee90898220235c09c0f222dcce",
+  "split_seeds": [20261013, 20261014, 20261015],
+  "train_fraction": 0.6,
+  "weight_decay": 1.0,
+  "calibration_per_split": 30,
+  "reuse_original_baseline": 20,
+  "calibration_cap": 30000,
+  "budgets": [8000, 12000],
+  "policies": [1, 2, 4],
+  "attempts_per_cell": 30,
+  "calibration_seed_start": 100000,
+  "validation_seed_start": 200000,
+  "primary_checks": 3,
+  "stability_checks": 21,
+  "stability_span_updates": 500,
+  "workers": 3,
+  "bootstrap_resamples": 5000,
+  "analysis_seed": 20261015,
+  "device": "cpu",
+  "cpu_threads": 4
+}

@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "hashed_files": 4522,
+  "committed_bytes_checked": true,
+  "checked_commit": "9a771ee827b1d1f6e49995100d8089d6e8dc4c86",
+  "package_manifest_sha256": "34cf56b545935a15a274fc9ed3e3350288ce53ee2cbf195e25435821269e1945",
+  "archive_commit": "d8ffc56dfb0805ee90898220235c09c0f222dcce"
+}

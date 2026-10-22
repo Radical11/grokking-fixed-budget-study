@@ -1,0 +1,7 @@
+   
+    TRUE
+  1   10
+  2   10
+  4   10
+All outcomes identical; no evidence for a policy difference.
+Ten attempts per policy give wide intervals. Absence of significance is not evidence of equivalence.

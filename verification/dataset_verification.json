@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "release_files_checked": 7748,
+  "dataset_pairs": 961,
+  "dataset_partitions_verified": 4,
+  "calibration": 90,
+  "policy_attempts": 540,
+  "raw_endpoints_reconstructed": true,
+  "exact_budgets_verified": true,
+  "omitted_course_sources": [
+    "sources/BAMAT207_PROBABILITY-AND-STATISTICS_ELA_1.0_84_BAMAT207_Probability and Statisics.pdf",
+    "sources/BAMAT207_PROBABILITY-AND-STATISTICS_ETH_1.0_84_BAMAT207_Probability and Statisics.pdf"
+  ],
+  "reproduction_run": false
+}

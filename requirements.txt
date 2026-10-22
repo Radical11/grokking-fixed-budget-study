@@ -1,0 +1,6 @@
+# Install CUDA torch separately using the official cu128 index (see README).
+numpy>=2.2
+reportlab>=4.4
+pypdf>=6
+Pillow>=11
+pytest>=8

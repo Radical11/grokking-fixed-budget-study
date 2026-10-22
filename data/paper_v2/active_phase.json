@@ -1,0 +1,8 @@
+{
+  "phase": "validation",
+  "pid": 9236,
+  "source_commit": "34e612ab5093348f3013efca278a6dd8d5819b38",
+  "started_at_utc": "2026-10-15T16:16:15.655112+00:00",
+  "status": "completed",
+  "completion_observed_at_utc": "2026-10-15T19:01:46.008346+00:00"
+}

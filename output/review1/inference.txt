@@ -1,0 +1,130 @@
+Grokking fixed-budget analysis | mode: review1 
+Randomization unit: independently initialized training run; fixed dataset split.
+Completed main runs: 24 | common cap: 30000 | pilot excluded.
+U=min(T,C) is fully observed; it is not an imputation of unrestricted T.
+Bootstrap mean intervals are percentile intervals from 1000 resamples.
+
+  train_fraction weight_decay  n successes censored delayed success_probability
+1            0.6          0.3  6         6        0       6                   1
+2            0.6          1.0 12        12        0      12                   1
+3            0.6          3.0  6         6        0       6                   1
+  prob_ci_low prob_ci_high mean_capped_time sd_capped_time median_capped_time
+1   0.5407419            1          13137.5      4593.3852            13962.5
+2   0.7353515            1           6475.0      7041.4277             4275.0
+3   0.5407419            1           1887.5       889.7682             1900.0
+  mean_ci_low mean_ci_high median_observed_time mean_runtime_seconds
+1    9526.979    16204.792              13962.5             180.3167
+2    3578.854    10614.583               4275.0             219.5009
+3    1216.667     2508.333               1900.0             263.3959
+
+Baseline capped mean and variance: 6475 49581705 
+
+Exploratory comparisons at 60% data: Welch tests, bootstrap mean differences.
+Decays 0.3 vs 1 | difference: 6662.5 | bootstrap CI: 1149.948 11087.6 
+
+	Welch Two Sample t-test
+
+data:  a and b
+t = 2.4091, df = 14.533, p-value = 0.02976
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+   751.2927 12573.7073
+sample estimates:
+mean of x mean of y 
+  13137.5    6475.0 
+
+Decays 0.3 vs 3 | difference: 11250 | bootstrap CI: 7658.021 14596.04 
+
+	Welch Two Sample t-test
+
+data:  a and b
+t = 5.8897, df = 5.3747, p-value = 0.001566
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+  6441.126 16058.874
+sample estimates:
+mean of x mean of y 
+  13137.5    1887.5 
+
+Decays 1 vs 3 | difference: 4587.5 | bootstrap CI: 1443.333 9006.51 
+
+	Welch Two Sample t-test
+
+data:  a and b
+t = 2.2217, df = 11.688, p-value = 0.04686
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+   75.12316 9099.87684
+sample estimates:
+mean of x mean of y 
+   6475.0    1887.5 
+
+  wd_a wd_b           p      p_holm
+1  0.3    1 0.029764602 0.059529205
+2  0.3    3 0.001565769 0.004697307
+3  1.0    3 0.046863805 0.059529205
+
+One-way ANOVA (exploratory):
+Analysis of Variance Table
+
+Response: U
+                     Df    Sum Sq   Mean Sq F value   Pr(>F)   
+factor(weight_decay)  2 386145937 193072969  6.1915 0.007696 **
+Residuals            21 654853125  31183482                    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+Residual diagnostics; capped outcomes may violate normality:
+
+	Shapiro-Wilk normality test
+
+data:  residuals(one)
+W = 0.7591, p-value = 6.784e-05
+
+Permutation sensitivity p: 0.01298701 
+
+Simple correlation and regression of U on log(weight decay):
+
+	Pearson's product-moment correlation
+
+data:  log(sixty$weight_decay) and sixty$U
+t = -3.5748, df = 22, p-value = 0.001691
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ -0.8112015 -0.2683958
+sample estimates:
+       cor 
+-0.6061632 
+
+
+	Spearman's rank correlation rho
+
+data:  sixty$weight_decay and sixty$U
+S = 4003.4, p-value = 3.498e-05
+alternative hypothesis: true rho is not equal to 0
+sample estimates:
+       rho 
+-0.7405932 
+
+
+Call:
+lm(formula = U ~ log(weight_decay), data = sixty)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-6690.7 -3764.6  -260.4  1057.5 20310.4 
+
+Coefficients:
+                  Estimate Std. Error t value Pr(>|t|)    
+(Intercept)           6865       1117   6.144 3.49e-06 ***
+log(weight_decay)    -4901       1371  -3.575  0.00169 ** 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 5471 on 22 degrees of freedom
+Multiple R-squared:  0.3674,	Adjusted R-squared:  0.3387 
+F-statistic: 12.78 on 1 and 22 DF,  p-value: 0.001691
+
+
+No F variance test or chi-square goodness-of-fit forced onto sparse/capped samples.
+Each policy prediction uses estimated F, conditional independence of initialization seeds and a fixed split.
+Predictions across budgets are correlated; they are not independent experimental replicates.

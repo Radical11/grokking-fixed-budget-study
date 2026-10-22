@@ -1,0 +1,138 @@
+{
+  "screen": "Exact contiguous 8-word and 12-word windows after lowercase alphanumeric normalization",
+  "sources": [
+    {
+      "id": 1,
+      "label": "Power et al. (2022)",
+      "url": "https://arxiv.org/pdf/2201.02177",
+      "sha256": "305dbd1256e1ac198dde517dda42b4f0a7eb9a9d3f4c03527c125b03eb9c62fc",
+      "pages": 10,
+      "status": "read"
+    },
+    {
+      "id": 2,
+      "label": "Truong et al. (2026) preprint",
+      "url": "https://arxiv.org/pdf/2605.18845",
+      "sha256": "55fd13802a05e2ff55174a716a229032b27a604455502096a0aef135c4a3bef8",
+      "pages": 51,
+      "status": "read"
+    },
+    {
+      "id": 3,
+      "label": "Streeter, Golovin and Smith (2007)",
+      "url": "https://www.cs.cmu.edu/~dgolovin/papers/aaai07b.pdf",
+      "sha256": "9d8a83d5732b5144e61a6553d2f3dba8170b6e77509acd53995c086fa4b4b091",
+      "pages": 7,
+      "status": "read"
+    }
+  ],
+  "matches": [
+    {
+      "unit": "final_report_body",
+      "source_id": 1,
+      "eight_word_windows": 0,
+      "twelve_word_windows": 0,
+      "examples": []
+    },
+    {
+      "unit": "final_report_body",
+      "source_id": 2,
+      "eight_word_windows": 0,
+      "twelve_word_windows": 0,
+      "examples": []
+    },
+    {
+      "unit": "final_report_body",
+      "source_id": 3,
+      "eight_word_windows": 0,
+      "twelve_word_windows": 0,
+      "examples": []
+    },
+    {
+      "unit": "slide_body",
+      "source_id": 1,
+      "eight_word_windows": 0,
+      "twelve_word_windows": 0,
+      "examples": []
+    },
+    {
+      "unit": "slide_body",
+      "source_id": 2,
+      "eight_word_windows": 0,
+      "twelve_word_windows": 0,
+      "examples": []
+    },
+    {
+      "unit": "slide_body",
+      "source_id": 3,
+      "eight_word_windows": 0,
+      "twelve_word_windows": 0,
+      "examples": []
+    },
+    {
+      "unit": "speaker_notes",
+      "source_id": 1,
+      "eight_word_windows": 0,
+      "twelve_word_windows": 0,
+      "examples": []
+    },
+    {
+      "unit": "speaker_notes",
+      "source_id": 2,
+      "eight_word_windows": 0,
+      "twelve_word_windows": 0,
+      "examples": []
+    },
+    {
+      "unit": "speaker_notes",
+      "source_id": 3,
+      "eight_word_windows": 0,
+      "twelve_word_windows": 0,
+      "examples": []
+    },
+    {
+      "unit": "paper_abstract",
+      "source_id": 1,
+      "eight_word_windows": 0,
+      "twelve_word_windows": 0,
+      "examples": []
+    },
+    {
+      "unit": "paper_abstract",
+      "source_id": 2,
+      "eight_word_windows": 0,
+      "twelve_word_windows": 0,
+      "examples": []
+    },
+    {
+      "unit": "paper_abstract",
+      "source_id": 3,
+      "eight_word_windows": 0,
+      "twelve_word_windows": 0,
+      "examples": []
+    },
+    {
+      "unit": "methods_supplement",
+      "source_id": 1,
+      "eight_word_windows": 0,
+      "twelve_word_windows": 0,
+      "examples": []
+    },
+    {
+      "unit": "methods_supplement",
+      "source_id": 2,
+      "eight_word_windows": 0,
+      "twelve_word_windows": 0,
+      "examples": []
+    },
+    {
+      "unit": "methods_supplement",
+      "source_id": 3,
+      "eight_word_windows": 0,
+      "twelve_word_windows": 0,
+      "examples": []
+    }
+  ],
+  "official_similarity_score": null,
+  "limitations": "Only the three cited PDFs were screened. No college checker, internet-wide corpus, student-submission database, semantic paraphrase detector, source-code comparison or AI-authorship detector was used. Text extraction and normalization can miss overlaps. Bibliographic title, author and URL strings are removed from slide-body comparison; the report bibliography is excluded. An exact phrase match is a review prompt, not proof of plagiarism; citations and standard technical language require context."
+}

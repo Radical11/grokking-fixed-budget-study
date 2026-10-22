@@ -1,0 +1,196 @@
+Grokking fixed-budget analysis | mode: review2 
+Randomization unit: independently initialized training run; fixed dataset split.
+Completed main runs: 120 | common cap: 30000 | pilot excluded.
+U=min(T,C) is fully observed; it is not an imputation of unrestricted T.
+Bootstrap mean intervals are percentile intervals from 1000 resamples.
+
+  train_fraction weight_decay  n successes censored delayed success_probability
+1            0.4          0.3 20         0       20       0                0.00
+2            0.6          0.3 20        19        1      19                0.95
+3            0.4          1.0 20        14        6      14                0.70
+4            0.6          1.0 20        20        0      20                1.00
+5            0.4          3.0 20        10       10      10                0.50
+6            0.6          3.0 20        20        0      18                1.00
+  prob_ci_low prob_ci_high mean_capped_time sd_capped_time variance_capped_time
+1   0.0000000    0.1684335         30000.00          0.000                    0
+2   0.7512672    0.9987349         15235.00       7786.064             60622789
+3   0.4572108    0.8810684         19822.50       8561.764             73303809
+4   0.8315665    1.0000000          5481.25       5547.806             30778150
+5   0.2719578    0.7280422         20282.50      11446.897            131031454
+6   0.8315665    1.0000000          1430.00       1163.553              1353855
+  median_capped_time skewness_capped_time excess_kurtosis_capped_time
+1            30000.0                   NA                          NA
+2            12012.5           0.58669741                  -0.8467631
+3            16925.0           0.06014318                  -1.5795389
+4             4025.0           3.18986647                  10.0325988
+5            27750.0          -0.49907612                  -1.5375094
+6              937.5           1.76972034                   2.9908132
+  mean_ci_low mean_ci_high median_observed_time mean_runtime_seconds
+1  30000.0000    30000.000                   NA             202.5345
+2  12027.2188    18860.344              11675.0             195.2738
+3  16159.9375    23336.562              14087.5             187.0100
+4   3596.1250     8223.906               4025.0             210.4883
+5  15616.2500    24941.906               7662.5             225.2515
+6    981.2188     1921.469                937.5             260.5578
+
+Baseline capped mean and variance: 5481.25 30778150 
+
+Exploratory comparisons at 60% data: Welch tests, bootstrap mean differences.
+Decays 0.3 vs 1 | difference: 9753.75 | bootstrap CI: 5766.125 13780.25 
+
+	Welch Two Sample t-test
+
+data:  a and b
+t = 4.5626, df = 34.339, p-value = 6.179e-05
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+  5410.864 14096.636
+sample estimates:
+mean of x mean of y 
+ 15235.00   5481.25 
+
+Decays 0.3 vs 3 | difference: 13805 | bootstrap CI: 10639.5 17195.75 
+
+	Welch Two Sample t-test
+
+data:  a and b
+t = 7.8422, df = 19.848, p-value = 1.669e-07
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ 10131.17 17478.83
+sample estimates:
+mean of x mean of y 
+    15235      1430 
+
+Decays 1 vs 3 | difference: 4051.25 | bootstrap CI: 2048.156 6752.406 
+
+	Welch Two Sample t-test
+
+data:  a and b
+t = 3.1962, df = 20.668, p-value = 0.004403
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ 1412.725 6689.775
+sample estimates:
+mean of x mean of y 
+  5481.25   1430.00 
+
+  wd_a wd_b            p       p_holm
+1  0.3    1 6.179116e-05 1.235823e-04
+2  0.3    3 1.668650e-07 5.005951e-07
+3  1.0    3 4.403256e-03 4.403256e-03
+
+One-way ANOVA (exploratory):
+Analysis of Variance Table
+
+Response: U
+                     Df     Sum Sq    Mean Sq F value    Pr(>F)    
+factor(weight_decay)  2 2014175271 1007087635  32.573 3.685e-10 ***
+Residuals            57 1762341094   30918265                      
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+Residual diagnostics; capped outcomes may violate normality:
+
+	Shapiro-Wilk normality test
+
+data:  residuals(one)
+W = 0.84965, p-value = 2.974e-06
+
+Permutation sensitivity p: 0.000999001 
+
+Simple correlation and regression of U on log(weight decay):
+
+	Pearson's product-moment correlation
+
+data:  log(sixty$weight_decay) and sixty$U
+t = -7.7799, df = 58, p-value = 1.433e-10
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ -0.8197774 -0.5628064
+sample estimates:
+       cor 
+-0.7146064 
+
+
+	Spearman's rank correlation rho
+
+data:  sixty$weight_decay and sixty$U
+S = 67149, p-value < 2.2e-16
+alternative hypothesis: true rho is not equal to 0
+sample estimates:
+       rho 
+-0.8657609 
+
+
+Call:
+lm(formula = U ~ log(weight_decay), data = sixty)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-8804.1 -3814.1    -9.3  1446.9 20004.7 
+
+Coefficients:
+                  Estimate Std. Error t value Pr(>|t|)    
+(Intercept)         7170.3      729.2   9.833 5.78e-14 ***
+log(weight_decay)  -6029.0      774.9  -7.780 1.43e-10 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 5645 on 58 degrees of freedom
+Multiple R-squared:  0.5107,	Adjusted R-squared:  0.5022 
+F-statistic: 60.53 on 1 and 58 DF,  p-value: 1.433e-10
+
+
+Multiple regression:
+
+Call:
+lm(formula = U ~ train_fraction + log(weight_decay), data = x)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-16712.2  -4078.6    139.5   2409.9  19974.1 
+
+Coefficients:
+                  Estimate Std. Error t value Pr(>|t|)    
+(Intercept)        55159.7     3376.7  16.335  < 2e-16 ***
+train_fraction    -79931.2     6622.1 -12.070  < 2e-16 ***
+log(weight_decay)  -5158.4      704.2  -7.325 3.31e-11 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 7254 on 117 degrees of freedom
+Multiple R-squared:  0.6302,	Adjusted R-squared:  0.6238 
+F-statistic: 99.67 on 2 and 117 DF,  p-value: < 2.2e-16
+
+
+Two-factor ANOVA, with interaction:
+Analysis of Variance Table
+
+Response: U
+                                             Df     Sum Sq    Mean Sq  F value
+factor(train_fraction)                        1 7666805672 7666805672 154.8380
+factor(weight_decay)                          2 3211532698 1605766349  32.4299
+factor(train_fraction):factor(weight_decay)   2  124128656   62064328   1.2534
+Residuals                                   114 5644711094   49515010         
+                                               Pr(>F)    
+factor(train_fraction)                      < 2.2e-16 ***
+factor(weight_decay)                        7.085e-12 ***
+factor(train_fraction):factor(weight_decay)    0.2894    
+Residuals                                                
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+                                         term    F_value      p_value
+1                      factor(train_fraction) 154.838012 5.652427e-23
+2                        factor(weight_decay)  32.429891 7.085212e-12
+3 factor(train_fraction):factor(weight_decay)   1.253445 2.894242e-01
+  permutation_p
+1   0.000999001
+2   0.000999001
+3   0.307692308
+Residuals vs fitted, QQ plot and group variance plots must be inspected before strong inference.
+null device 
+          1 
+
+No F variance test or chi-square goodness-of-fit forced onto sparse/capped samples.
+Each policy prediction uses estimated F, conditional independence of initialization seeds and a fixed split.
+Predictions across budgets are correlated; they are not independent experimental replicates.

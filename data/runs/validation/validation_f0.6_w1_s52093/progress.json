@@ -1,0 +1,7 @@
+{
+  "step": 7500,
+  "cap": 7500,
+  "memorization_time": 300,
+  "generalization_time": 4800,
+  "elapsed_seconds": 45.142249299999094
+}

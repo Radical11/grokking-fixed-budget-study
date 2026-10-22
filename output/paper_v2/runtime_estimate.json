@@ -1,0 +1,30 @@
+{
+  "scope": "Pre-validation rough compute forecast, not a measured total execution time",
+  "recorded_at_utc": "2026-10-15T13:57:50.960882+00:00",
+  "workers": 3,
+  "threads_per_worker": 4,
+  "first_completed_batch": [
+    {
+      "run_id": "pv2_cal_s20261013_r20_i100000",
+      "completed_updates": 30000,
+      "elapsed_seconds": 236.8019037999984
+    },
+    {
+      "run_id": "pv2_cal_s20261013_r21_i100001",
+      "completed_updates": 30000,
+      "elapsed_seconds": 228.59388229999604
+    },
+    {
+      "run_id": "pv2_cal_s20261013_r22_i100002",
+      "completed_updates": 30000,
+      "elapsed_seconds": 224.77440940000088
+    }
+  ],
+  "batch_duration_proxy_seconds": 236.8019037999984,
+  "proxy_note": "Maximum recorded run duration among the first three concurrent runs; excludes process startup, idle scheduling and recovery overhead. Runtime varies with contention.",
+  "approximate_updates_per_wall_second": 380.0645119644541,
+  "planned_new_logical_updates": 7500000,
+  "estimated_total_training_hours": 5.481525550925889,
+  "estimated_validation_hours": 3.94669839666664,
+  "excludes": "Analysis, artifact building, audit and visual inspection"
+}

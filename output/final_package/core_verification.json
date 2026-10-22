@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "completion_review_date": "2026-10-15",
+  "verified_at_utc": "2026-10-15T08:28:13.765272+00:00",
+  "test_result": "21 passed in 25.05s",
+  "preserved_report_input_hashes": 477,
+  "completed_experimental_runs": 199,
+  "main_runs": 120,
+  "unfinished_main_outcomes": 37,
+  "validation_constituents": 70,
+  "policy_attempts": 30,
+  "finite_traces": 199,
+  "reproduced_R_csv_files": 11,
+  "reproduced_graphs_pixel_identical": 8,
+  "raw_trace_audit": "passed",
+  "reproduced_report_pages": 7,
+  "reproduced_report_text_matches": true
+}

@@ -1,0 +1,30 @@
+{
+  "protocol_version": "1.0",
+  "modulus": 31,
+  "embedding_dim": 64,
+  "heads": 4,
+  "ff_dim": 128,
+  "learning_rate": 0.003,
+  "betas": [
+    0.9,
+    0.98
+  ],
+  "eval_every": 25,
+  "checkpoint_every": 500,
+  "train_threshold": 0.99,
+  "test_threshold": 0.95,
+  "consecutive": 3,
+  "split_seed": 20261013,
+  "max_updates": 30000,
+  "delayed_ratio": 3.0,
+  "delayed_min_gap": 200,
+  "device": "auto",
+  "cpu_threads": 4,
+  "cuda_graphs": true,
+  "precision": "float32; TF32 disabled",
+  "stage": "main",
+  "train_fraction": 0.4,
+  "weight_decay": 3.0,
+  "init_seed": 10201,
+  "run_id": "main_f0.4_w3_s10201"
+}

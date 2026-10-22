@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "mode": "review1",
+  "completed_main_runs": 24,
+  "completed_pilot_runs": 9,
+  "trace_outcomes_recomputed": true,
+  "disjoint_partitions_verified": true,
+  "R_counts_and_means_verified": true,
+  "policy_predictions_verified": true,
+  "device": "cpu",
+  "cuda_training_executed": false
+}

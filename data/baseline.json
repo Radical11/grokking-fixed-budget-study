@@ -1,0 +1,8 @@
+{
+  "train_fraction": 0.6,
+  "weight_decay": 1.0,
+  "max_updates": 30000,
+  "pilot_median": 2400,
+  "reason": "At least two delayed seeds; median closest to 7500; tie lower decay.",
+  "protocol_version": "1.0"
+}

@@ -1,0 +1,9 @@
+[
+  {"id":1,"label":"Power et al. (2022)","title":"Grokking: Generalization Beyond Overfitting on Small Algorithmic Datasets","url":"https://arxiv.org/abs/2201.02177","pdf":"https://arxiv.org/pdf/2201.02177","status":"Preprint"},
+  {"id":2,"label":"Truong et al. (2026)","title":"First-Passage Prediction of Grokking Delay: A Calibrated Law under AdamW with Causal Validation","url":"https://arxiv.org/abs/2605.18845","pdf":"https://arxiv.org/pdf/2605.18845","status":"Preprint"},
+  {"id":3,"label":"Streeter, Golovin and Smith (2007)","title":"Restart Schedules for Ensembles of Problem Instances","url":"https://www.cs.cmu.edu/~dgolovin/papers/aaai07b.pdf","pdf":"https://www.cs.cmu.edu/~dgolovin/papers/aaai07b.pdf","status":"Research paper"},
+  {"id":4,"label":"Ootani (2026)","title":"Grokking Is Conditional and Fragile: A Fully-Tractable, Multi-Seed Study at 12K Parameters","url":"https://arxiv.org/abs/2607.05104","pdf":"https://arxiv.org/pdf/2607.05104","status":"Preprint"},
+  {"id":5,"label":"Loshchilov and Hutter (2019)","title":"Decoupled Weight Decay Regularization","url":"https://arxiv.org/abs/1711.05101","pdf":"https://arxiv.org/pdf/1711.05101","status":"ICLR 2019"},
+  {"id":6,"label":"Vaswani et al. (2017)","title":"Attention Is All You Need","url":"https://arxiv.org/abs/1706.03762","pdf":"https://arxiv.org/pdf/1706.03762","status":"NeurIPS 2017"},
+  {"id":7,"label":"Official supplied BAMAT207 syllabus, version 1","title":"Probability and Statistics: theory and embedded laboratory","url":"sources/; docs/SYLLABUS_MAP.md","status":"Course specification"}
+]

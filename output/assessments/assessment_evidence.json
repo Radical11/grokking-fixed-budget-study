@@ -1,0 +1,300 @@
+{
+  "policy_counts": [
+    {
+      "split_seed": "20261013",
+      "total_budget": "8000",
+      "k": "1",
+      "endpoint": "first",
+      "n": "30",
+      "successes": "28"
+    },
+    {
+      "split_seed": "20261013",
+      "total_budget": "8000",
+      "k": "2",
+      "endpoint": "first",
+      "n": "30",
+      "successes": "23"
+    },
+    {
+      "split_seed": "20261013",
+      "total_budget": "8000",
+      "k": "4",
+      "endpoint": "first",
+      "n": "30",
+      "successes": "12"
+    },
+    {
+      "split_seed": "20261013",
+      "total_budget": "8000",
+      "k": "1",
+      "endpoint": "stability",
+      "n": "30",
+      "successes": "28"
+    },
+    {
+      "split_seed": "20261013",
+      "total_budget": "8000",
+      "k": "2",
+      "endpoint": "stability",
+      "n": "30",
+      "successes": "21"
+    },
+    {
+      "split_seed": "20261013",
+      "total_budget": "8000",
+      "k": "4",
+      "endpoint": "stability",
+      "n": "30",
+      "successes": "4"
+    },
+    {
+      "split_seed": "20261013",
+      "total_budget": "12000",
+      "k": "1",
+      "endpoint": "first",
+      "n": "30",
+      "successes": "30"
+    },
+    {
+      "split_seed": "20261013",
+      "total_budget": "12000",
+      "k": "2",
+      "endpoint": "first",
+      "n": "30",
+      "successes": "30"
+    },
+    {
+      "split_seed": "20261013",
+      "total_budget": "12000",
+      "k": "4",
+      "endpoint": "first",
+      "n": "30",
+      "successes": "24"
+    },
+    {
+      "split_seed": "20261013",
+      "total_budget": "12000",
+      "k": "1",
+      "endpoint": "stability",
+      "n": "30",
+      "successes": "30"
+    },
+    {
+      "split_seed": "20261013",
+      "total_budget": "12000",
+      "k": "2",
+      "endpoint": "stability",
+      "n": "30",
+      "successes": "30"
+    },
+    {
+      "split_seed": "20261013",
+      "total_budget": "12000",
+      "k": "4",
+      "endpoint": "stability",
+      "n": "30",
+      "successes": "13"
+    },
+    {
+      "split_seed": "20261014",
+      "total_budget": "8000",
+      "k": "1",
+      "endpoint": "first",
+      "n": "30",
+      "successes": "28"
+    },
+    {
+      "split_seed": "20261014",
+      "total_budget": "8000",
+      "k": "2",
+      "endpoint": "first",
+      "n": "30",
+      "successes": "24"
+    },
+    {
+      "split_seed": "20261014",
+      "total_budget": "8000",
+      "k": "4",
+      "endpoint": "first",
+      "n": "30",
+      "successes": "9"
+    },
+    {
+      "split_seed": "20261014",
+      "total_budget": "8000",
+      "k": "1",
+      "endpoint": "stability",
+      "n": "30",
+      "successes": "27"
+    },
+    {
+      "split_seed": "20261014",
+      "total_budget": "8000",
+      "k": "2",
+      "endpoint": "stability",
+      "n": "30",
+      "successes": "18"
+    },
+    {
+      "split_seed": "20261014",
+      "total_budget": "8000",
+      "k": "4",
+      "endpoint": "stability",
+      "n": "30",
+      "successes": "4"
+    },
+    {
+      "split_seed": "20261014",
+      "total_budget": "12000",
+      "k": "1",
+      "endpoint": "first",
+      "n": "30",
+      "successes": "30"
+    },
+    {
+      "split_seed": "20261014",
+      "total_budget": "12000",
+      "k": "2",
+      "endpoint": "first",
+      "n": "30",
+      "successes": "30"
+    },
+    {
+      "split_seed": "20261014",
+      "total_budget": "12000",
+      "k": "4",
+      "endpoint": "first",
+      "n": "30",
+      "successes": "20"
+    },
+    {
+      "split_seed": "20261014",
+      "total_budget": "12000",
+      "k": "1",
+      "endpoint": "stability",
+      "n": "30",
+      "successes": "30"
+    },
+    {
+      "split_seed": "20261014",
+      "total_budget": "12000",
+      "k": "2",
+      "endpoint": "stability",
+      "n": "30",
+      "successes": "30"
+    },
+    {
+      "split_seed": "20261014",
+      "total_budget": "12000",
+      "k": "4",
+      "endpoint": "stability",
+      "n": "30",
+      "successes": "16"
+    },
+    {
+      "split_seed": "20261015",
+      "total_budget": "8000",
+      "k": "1",
+      "endpoint": "first",
+      "n": "30",
+      "successes": "28"
+    },
+    {
+      "split_seed": "20261015",
+      "total_budget": "8000",
+      "k": "2",
+      "endpoint": "first",
+      "n": "30",
+      "successes": "25"
+    },
+    {
+      "split_seed": "20261015",
+      "total_budget": "8000",
+      "k": "4",
+      "endpoint": "first",
+      "n": "30",
+      "successes": "11"
+    },
+    {
+      "split_seed": "20261015",
+      "total_budget": "8000",
+      "k": "1",
+      "endpoint": "stability",
+      "n": "30",
+      "successes": "26"
+    },
+    {
+      "split_seed": "20261015",
+      "total_budget": "8000",
+      "k": "2",
+      "endpoint": "stability",
+      "n": "30",
+      "successes": "21"
+    },
+    {
+      "split_seed": "20261015",
+      "total_budget": "8000",
+      "k": "4",
+      "endpoint": "stability",
+      "n": "30",
+      "successes": "1"
+    },
+    {
+      "split_seed": "20261015",
+      "total_budget": "12000",
+      "k": "1",
+      "endpoint": "first",
+      "n": "30",
+      "successes": "30"
+    },
+    {
+      "split_seed": "20261015",
+      "total_budget": "12000",
+      "k": "2",
+      "endpoint": "first",
+      "n": "30",
+      "successes": "29"
+    },
+    {
+      "split_seed": "20261015",
+      "total_budget": "12000",
+      "k": "4",
+      "endpoint": "first",
+      "n": "30",
+      "successes": "23"
+    },
+    {
+      "split_seed": "20261015",
+      "total_budget": "12000",
+      "k": "1",
+      "endpoint": "stability",
+      "n": "30",
+      "successes": "30"
+    },
+    {
+      "split_seed": "20261015",
+      "total_budget": "12000",
+      "k": "2",
+      "endpoint": "stability",
+      "n": "30",
+      "successes": "29"
+    },
+    {
+      "split_seed": "20261015",
+      "total_budget": "12000",
+      "k": "4",
+      "endpoint": "stability",
+      "n": "30",
+      "successes": "19"
+    }
+  ],
+  "primary_significant": 4,
+  "source_sha256": {
+    "output/paper_v2/paper.md": "911fef0390d6d3bf85ceb31ccefc48778763527ad4544cfd2f4514530698f6ab",
+    "output/paper_v2/policy_statistics.csv": "2046a361150b44bdf428f3c71f830e00031104993d9d83d693488227d503eb0b",
+    "output/paper_v2/risk_differences.csv": "2dc6de46c15ade4d956de395c5e868b9e7722b045679f26b825395b6b545d3ff",
+    "output/paper_v2/calibration_statistics.csv": "f92d76c59e7ca70740218dae0307c7e825c0ed63aab2781c88675c32153f6770",
+    "output/paper_v2/presentation_evidence.json": "48cbc5cabce8535fdd74cc0e71f0d8f309237e337b18605366fea0ac1c2ec851"
+  }
+}
