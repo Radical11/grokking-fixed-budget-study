@@ -2,7 +2,7 @@
 
 | Team member | Registration number |
 |---|---|
-| Vihaan Jinesh Jain | 25BYB0103 |
+| Vihaan Jinesh Jain | 25BYB0130 |
 | Kaashvi Goel | 25BYB0129 |
 | Gaurav Kansal | 25BYB0157 |
 

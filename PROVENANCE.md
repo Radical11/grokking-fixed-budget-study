@@ -17,3 +17,7 @@ Scientific conclusions remain conditional on one task, one network and three fix
 ## Submission author revision
 
 On 22 October 2026, the current Assessment 9 and Assessment 10 report, brief and presentation were regenerated with the three author names and registration numbers supplied by the team. The source is `configs/submission_authors.json`. The underlying experimental records and numerical findings are unchanged. Archived earlier deliveries retain their original identity placeholders.
+
+## Registration correction
+
+Vihaan Jinesh Jain confirmed the correct registration number as **25BYB0130** on 22 October 2026. The current Assessment 9 and Assessment 10 files, author configuration and submission entries were corrected accordingly. Previous revision records describe their historical snapshots. Experimental data and statistical results are unchanged.

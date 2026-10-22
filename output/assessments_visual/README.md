@@ -9,7 +9,7 @@ These are the revised submissions following the request for diagrams, graphs and
 - **Editable IEEE source:** `Assessment9_Visual_LaTeX_Source.zip` includes the unchanged IEEE class, manuscript, figure PDFs and reference metadata.
 - **Speaking script:** `speaker_notes.md`; fuller source citations are embedded in the PPTX notes.
 
-The current submissions identify Vihaan Jinesh Jain (25BYB0103), Kaashvi Goel (25BYB0129) and Gaurav Kansal (25BYB0157). The editable author record is `configs/submission_authors.json`; the report, brief and presentation builders read it. No department or institution was supplied, so no affiliation is asserted. Figures show recorded observations or clearly labelled experimental allocations; no illustrative results were invented. The findings and experimental design are unchanged.
+The current submissions identify Vihaan Jinesh Jain (25BYB0130), Kaashvi Goel (25BYB0129) and Gaurav Kansal (25BYB0157). The editable author record is `configs/submission_authors.json`; the report, brief and presentation builders read it. No department or institution was supplied, so no affiliation is asserted. Figures show recorded observations or clearly labelled experimental allocations; no illustrative results were invented. The findings and experimental design are unchanged.
 
 ## Visual conventions
 
