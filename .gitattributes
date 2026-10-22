@@ -1,0 +1,25 @@
+* text=auto eol=lf
+*.pdf binary
+*.png binary
+*.pptx binary
+*.csv -text
+*.json -text
+*.pt -text
+output/review1/analysis_source.R -text
+output/review2/*.txt -text
+output/review1/inference.txt -text
+output/pdf/review2_report.md -text whitespace=cr-at-eol
+requirements.lock.txt -text whitespace=cr-at-eol
+data/paper_v2/** whitespace=cr-at-eol
+output/paper_v2/** whitespace=cr-at-eol
+output/paper_v2/*.txt -text whitespace=cr-at-eol
+data/paper_v2/**/*.txt -text whitespace=cr-at-eol
+
+# Preserve original archival byte encodings in this public snapshot.
+* whitespace=cr-at-eol
+output/pdf/review1_report.md -text whitespace=cr-at-eol
+output/review1/validation.txt -text whitespace=cr-at-eol
+output/review1_presentation/submission_text.md -text whitespace=cr-at-eol
+output/review1/inference.txt -whitespace
+output/review2/inference.txt -whitespace
+output/review2/policy_tests.txt -whitespace

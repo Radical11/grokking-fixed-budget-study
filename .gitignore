@@ -1,0 +1,10 @@
+.venv/
+.tools/
+__pycache__/
+*.pyc
+data/**/checkpoint.pt
+data/**/checkpoint.tmp
+tmp/
+.pytest_cache/
+.chart-data-*/
+data/paper_v2/.pipeline.lock
