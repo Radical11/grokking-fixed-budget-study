@@ -6,4 +6,4 @@ IEEE guidance: https://conferences.ieeeauthorcenter.ieee.org/write-your-paper/au
 
 Class SHA256: `da751920a317ed318b7b5cd7fa585a6cc7d28502d457856382e9be24b10a3bd7`
 
-This is a college assessment formatted with the conference class. It does not claim IEEE publication or acceptance. Replace author and affiliation placeholders before submission.
+This is a college assessment formatted with the conference class. It does not claim IEEE publication or acceptance. The current author names and registration numbers come from configs/submission_authors.json. No affiliation has been asserted.

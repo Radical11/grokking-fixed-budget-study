@@ -8,6 +8,7 @@ from reportlab.pdfgen import canvas
 from grokking.paper_sources import tokens,windows
 
 ROOT=Path(__file__).resolve().parents[2];OUT=ROOT/'output/assessments_visual';TMP=ROOT/'tmp/assessments_visual'
+AUTHORS=json.loads((ROOT/'configs/submission_authors.json').read_text(encoding='utf-8'))['authors']
 NS={'a':'http://schemas.openxmlformats.org/drawingml/2006/main','c':'http://schemas.openxmlformats.org/drawingml/2006/chart','p':'http://schemas.openxmlformats.org/presentationml/2006/main'}
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def close(a,b):return math.isclose(float(a),float(b),rel_tol=0,abs_tol=.02)
@@ -38,6 +39,10 @@ def verify():
                 assert len(actual)==len(y) and all(math.isclose(a,float(b),abs_tol=1e-8,rel_tol=0) for a,b in zip(actual,y)),name
                 if x is not None:assert values(ser,'c:xVal')==x
         for n in slides:visible.append(' '.join(t.text or '' for t in E.fromstring(z.read(n)).findall('.//a:t',NS)))
+        cover=' '.join(t.text or '' for t in E.fromstring(z.read('ppt/slides/slide1.xml')).findall('.//a:t',NS))
+        for author in AUTHORS:
+            assert author['name'] in cover and author['registration_number'] in cover
+        assert '[Your name]' not in cover and '[Your registration number]' not in cover
         notes=[n for n in names if re.fullmatch(r'ppt/notesSlides/notesSlide\d+\.xml',n)];assert len(notes)==10
         for n in notes:
             s=' '.join(t.text or '' for t in E.fromstring(z.read(n)).findall('.//a:t',NS));assert 'Sources:' in s and 'Target:' in s;spoken.append(s)
@@ -78,6 +83,11 @@ def verify():
         im=next(v.get_object() for v in page['/Resources']['/XObject'].values() if v.get_object()['/Subtype']=='/Image')
         assert im.get_data()==Image.open(TMP/f'final-slide-{i:02d}.png').convert('RGB').tobytes()
     brief=OUT/'Assessment10_Visual_Explanation.pdf';assert len(PdfReader(brief).pages)==2
+    for pdf_path in (brief,OUT/'assessment9_ieee/main.pdf'):
+        cover_text=PdfReader(pdf_path).pages[0].extract_text()
+        for author in AUTHORS:
+            assert author['name'] in cover_text and author['registration_number'] in cover_text,pdf_path
+        assert '[Your name]' not in cover_text and '[Registration number]' not in cover_text
     positioned=[]
     PdfReader(brief).pages[1].extract_text(visitor_text=lambda text,cm,tm,font,size:positioned.append((tm[4],tm[5],text.strip())) if text.strip() else None)
     for i,sp in enumerate((20261013,20261014,20261015)):

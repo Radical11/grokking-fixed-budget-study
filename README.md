@@ -14,7 +14,7 @@ This public research snapshot contains the implementation, recorded experiments,
 | Full study | [Eight-page paper](output/paper_v2/paper.pdf) · [Technical supplement](output/paper_v2/supplement.pdf) |
 | Submission form | [Copy-ready entries](SUBMISSION.md) |
 
-Identity fields remain editable. Course submission and plagiarism clearance are separate from completion of the experiments.
+Team: **Vihaan Jinesh Jain (25BYB0103)**, **Kaashvi Goel (25BYB0129)** and **Gaurav Kansal (25BYB0157)**. Author fields remain editable. Course submission and plagiarism clearance are separate from completion of the experiments.
 
 ## Result
 

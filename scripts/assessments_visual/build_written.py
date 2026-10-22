@@ -8,6 +8,7 @@ from reportlab.lib.utils import simpleSplit
 ROOT=Path(__file__).resolve().parents[2];OUT=ROOT/'output/assessments_visual';SOURCE=ROOT/'output/paper_v2'
 BLUE=HexColor('#175F96');INK=HexColor('#172B3A');GREY=HexColor('#637E8E');PALE=HexColor('#EAF1F7')
 DATA=json.loads((SOURCE/'presentation_evidence.json').read_text(encoding='utf-8'))
+AUTHORS=json.loads((ROOT/'configs/submission_authors.json').read_text(encoding='utf-8'))['authors']
 
 def text(c,s,x,y,size=10,bold=False,color=INK,width=None,center=False):
     c.setFont('Helvetica-Bold' if bold else 'Helvetica',size);c.setFillColor(color)
@@ -43,7 +44,10 @@ def brief():
     OUT.mkdir(parents=True,exist_ok=True);c=canvas.Canvas(str(OUT/'Assessment10_Visual_Explanation.pdf'),pagesize=(595.28,841.89))
     c.setTitle('Assessment 10 - Visual explanation and results')
     text(c,'Grokking Under a Fixed Budget',46,805,20,True)
-    text(c,'Name: [Your name]    Registration: [Your registration number]',46,779,9,color=GREY)
+    c.setAuthor('; '.join(a['name'] for a in AUTHORS))
+    for i,author in enumerate(AUTHORS):
+        text(c,author['name'],46+i*168,779,9.5,True)
+        text(c,author['registration_number'],46+i*168,765,9,color=GREY)
     text(c,'1. The task and dataset',46,739,13,True)
     node(c,'30 + 4 = 34',46,681,168,35,12);node(c,'34 mod 31 = 3',328,681,221,35,12);arrow(c,214,698.5,328,698.5)
     text(c,'Modulo keeps the remainder',270,663,9,color=GREY,center=True)
@@ -128,10 +132,17 @@ def ieee():
     dest=OUT/'assessment9_ieee';dest.mkdir(parents=True,exist_ok=True)
     old=ROOT/'output/assessments/assessment9_ieee'
     for name in ('IEEEtran.cls','references.bib','TEMPLATE_SOURCE.md'):shutil.copy2(old/name,dest/name)
+    template_record=dest/'TEMPLATE_SOURCE.md'
+    template_record.write_text(template_record.read_text(encoding='utf-8').replace('Replace author and affiliation placeholders before submission.','The current author names and registration numbers come from configs/submission_authors.json. No affiliation has been asserted.'),encoding='utf-8',newline='\n')
     (dest/'figures').mkdir(exist_ok=True)
     for p in (old/'figures').glob('*.pdf'):shutil.copy2(p,dest/'figures'/p.name)
     workflow(dest/'figures/workflow.pdf')
     s=(old/'main.tex').read_text(encoding='utf-8')
+    author_start=s.index(r'\author{')
+    author_end=s.index(r'\begin{document}',author_start)
+    author_blocks=[r'\IEEEauthorblockN{'+a['name']+'}\n'+r'\IEEEauthorblockA{'+a['registration_number']+'}' for a in AUTHORS]
+    s=s[:author_start]+'\\author{\n'+('\n\\and\n'.join(author_blocks))+'\n}\n'+s[author_end:]
+    s=s.replace(r'\usepackage[hidelinks]{hyperref}',r'\usepackage[hidelinks]{hyperref}'+'\n'+r'\hypersetup{pdfauthor={'+', '.join(a['name'] for a in AUTHORS)+'}}')
     abstract='''Grokking is delayed improvement on held-out examples after strong training performance. We study completion-time variation in a fixed small transformer learning addition modulo 31, then compare one long run with two or four independent starts at total budgets of 8,000 or 12,000 updates. There are 90 calibration observations across three fixed dataset splits, including 20 reused runs, and 540 fresh policy attempts. Primary success requires three accuracy checks; a secondary endpoint requires a 500-update window. At 8,000 updates, one run succeeds 28/30 times on every split; four starts succeed 12/30, 9/30 and 11/30. All three contrasts survive Holm correction. At 12,000, only the second-split four-versus-one contrast is detected. No two-run contrast is detected. Four of twelve planned tests are significant. We report uncertainty and keep unfinished event times unknown. The proposed empirical contribution links completion curves, equal-budget allocation and finite stability, conditional on this task and model.'''
     s=re.sub(r'(?s)(\\begin\{abstract\}).*?(\\end\{abstract\})',lambda m:m[1]+'\n'+abstract+'\n'+m[2],s,count=1)
     def paragraph_after(section,replacement):

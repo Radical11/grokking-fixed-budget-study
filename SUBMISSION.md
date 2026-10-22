@@ -1,5 +1,11 @@
 # Submission entries
 
+| Team member | Registration number |
+|---|---|
+| Vihaan Jinesh Jain | 25BYB0103 |
+| Kaashvi Goel | 25BYB0129 |
+| Gaurav Kansal | 25BYB0157 |
+
 | Field | Copy-ready entry |
 |---|---|
 | Dataset source (if any) | Programmatically generated modular-addition dataset: all 961 ordered input pairs (a,b), with a,b from 0 to 30 and target (a+b) mod 31. Generated in Python; no external dataset was downloaded. |
@@ -12,4 +18,4 @@
 - [Dataset generator](https://github.com/Radical11/grokking-fixed-budget-study/blob/main/grokking/model.py)
 - [Complete recorded experiment data](https://github.com/Radical11/grokking-fixed-budget-study/tree/main/data)
 
-Replace the editable name/registration/affiliation fields before the final college upload. Public inspection does not mean institutional plagiarism clearance or peer-reviewed publication.
+The current Assessment 9 and Assessment 10 files include this team. Public inspection does not mean institutional plagiarism clearance or peer-reviewed publication.

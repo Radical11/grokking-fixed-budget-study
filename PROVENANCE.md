@@ -13,3 +13,7 @@ The public version of `grokking.paper_audit` adds an explicit `--scientific-only
 Use `scripts/verify_public_release.py` and the public release manifest to verify this checkout. Historical private-delivery manifests describe older snapshots and should not be mistaken for a manifest of the public repository's changed documentation. Original Git-archive/tag-dependent packaging commands and locally bundled presentation authoring need their documented original environment; they are not the portable verification entry point.
 
 Scientific conclusions remain conditional on one task, one network and three fixed dataset splits. A first threshold confirmation and a 500-update window do not establish permanent generalization. [Assistance and attribution](ACKNOWLEDGEMENTS.md) remain explicit.
+
+## Submission author revision
+
+On 22 October 2026, the current Assessment 9 and Assessment 10 report, brief and presentation were regenerated with the three author names and registration numbers supplied by the team. The source is `configs/submission_authors.json`. The underlying experimental records and numerical findings are unchanged. Archived earlier deliveries retain their original identity placeholders.

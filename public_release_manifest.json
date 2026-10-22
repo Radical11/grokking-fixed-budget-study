@@ -15315,26 +15315,26 @@
     "output/assessments/verification.json": "d991c4637992a534657b554cbcd267dd3ef98507eed0a5acf5643e2704cd8376",
     "output/assessments/visual_review.json": "0ddc0f565bc4346bb60c92d958bdb54c42aabdcd168350cf7b982b54bcfbc170",
     "output/assessments_visual/.gitattributes": "40e1bcf1e11ca15ec98e743ef1903f38930391a2d707f053a55396bff48f5e32",
-    "output/assessments_visual/Assessment10_Visual.pdf": "f02ecf261a62ea269cb0f415489fb1457f3b89a035008b45eafbcce205912050",
-    "output/assessments_visual/Assessment10_Visual.pptx": "f73d038dd64acdf26c57fde957ade71bff6f29d98c0a886396b2215196b2092f",
-    "output/assessments_visual/Assessment10_Visual_Explanation.pdf": "ac8a7133b741dd3fc013f2d51a808bc53749e799345b12b288c30ccc29708eba",
+    "output/assessments_visual/Assessment10_Visual.pdf": "c2900a6013d99e18749d422db7ee2a1f36f6683277211b5a5ec50037567a7c04",
+    "output/assessments_visual/Assessment10_Visual.pptx": "b696697623fefd39991bf32243937843c2b5c9f791af8378e0d7b0a72ab14994",
+    "output/assessments_visual/Assessment10_Visual_Explanation.pdf": "84d8627bf060b0a4c28edec4d6e18a51b952a132fb4103000a846412ef84ae71",
     "output/assessments_visual/assessment9_ieee/figures/learning_delay.pdf": "14eb671b526951098ab46de0f278a1f14096cb231e7eb295c5a7341d0c1304d2",
     "output/assessments_visual/assessment9_ieee/figures/policy_validation.pdf": "e2436d2fb4e8e662bfd289c008a653b42cdf25cb67603ea8f0ca7337d36a7131",
     "output/assessments_visual/assessment9_ieee/figures/risk_differences.pdf": "4bc957e38f2a202d1258d701c02dd8ed9aa69b9c0d0788a7573d9926f799d5cd",
     "output/assessments_visual/assessment9_ieee/figures/stability_comparison.pdf": "de82b51a0d2731a63eed81542c9d7f0c0fb89b3aa88c4f20486bf240a9df3dce",
     "output/assessments_visual/assessment9_ieee/figures/workflow.pdf": "e4f9b6c5f3ad8ea1bc938e7b5e0368464e61ee16ddaed4a1eb4df4184f1583e4",
     "output/assessments_visual/assessment9_ieee/IEEEtran.cls": "da751920a317ed318b7b5cd7fa585a6cc7d28502d457856382e9be24b10a3bd7",
-    "output/assessments_visual/assessment9_ieee/main.pdf": "a69a4b471d51eab408a1724a7a02f37e044c977c2ff4e047a4ba9269aa22742e",
-    "output/assessments_visual/assessment9_ieee/main.tex": "b20812a0af5607be930dc4ebda4d8f13a14fefdeeec81897a5e14ad016f8275b",
+    "output/assessments_visual/assessment9_ieee/main.pdf": "84f0faf3b8200cd575383222db03cf5fe95550924885c1bda5f47f2931b73b2d",
+    "output/assessments_visual/assessment9_ieee/main.tex": "8bb04252e3e18824716c4ece4bb3448cd9a872a1c015c23b9f0239e7cc331697",
     "output/assessments_visual/assessment9_ieee/references.bib": "8cffd7a6e68900b0352e3e5ca49eee33d5b836d417b5e37222e7a9c3ae1b1081",
-    "output/assessments_visual/assessment9_ieee/TEMPLATE_SOURCE.md": "c08d8fc88697d97e2ef2fab0078b1f21d41088e665869fa695a9f32e22682d43",
-    "output/assessments_visual/Assessment9_IEEE_Visual_Report.pdf": "a69a4b471d51eab408a1724a7a02f37e044c977c2ff4e047a4ba9269aa22742e",
-    "output/assessments_visual/Assessment9_Visual_LaTeX_Source.zip": "f97525d9c2f04f14da4ffd987fab3d8b851754a5dd32c1a68fa4ad9d9e8c03e3",
-    "output/assessments_visual/manifest.json": "f051a82a528c70b52f3382677044a3a8e3d2746d2909e276ec8bd1ca638011f1",
-    "output/assessments_visual/README.md": "3f6b195678034e7f7f82b1fbc31e6e0e28c9852122201c80c0285d292b121357",
+    "output/assessments_visual/assessment9_ieee/TEMPLATE_SOURCE.md": "f33fd1278d43f898d3c47bf326e2ac6b2feed70fdab9907d66bea7a3e89167b7",
+    "output/assessments_visual/Assessment9_IEEE_Visual_Report.pdf": "84f0faf3b8200cd575383222db03cf5fe95550924885c1bda5f47f2931b73b2d",
+    "output/assessments_visual/Assessment9_Visual_LaTeX_Source.zip": "5c58eb3b6fa4497a9baf3b47df598e041ef641a3ae1c9174b14535e098e43769",
+    "output/assessments_visual/manifest.json": "054b92a9e562537a087a362eebfa575e38a3d937df4eb8b22b09d76c06063f28",
+    "output/assessments_visual/README.md": "8ff72c1c9de34967312fa2165f1a3a2b30dd2aac10bcb0684a06fccef8795f03",
     "output/assessments_visual/source_overlap.json": "04f969d45b71189d62eef238bf41aeef97fa8ebe12cb996c59eb326edfc4dcad",
     "output/assessments_visual/speaker_notes.md": "05e7fd42d6fbca1cf92df4bfaef8d600cd85834b7c5bda48f24a4e93fc477942",
-    "output/assessments_visual/visual_review.json": "69a56eb7d978b753525a9432ba9a6d9bd718cdc8fc5e3b4824e80ca816c82e95",
+    "output/assessments_visual/visual_review.json": "a671c65f2affb5da4256e003db2a6b5c2ac4937399bb2f52e138da7192eb2144",
     "output/DELIVERY_VERIFICATION.json": "8e70d3b2fa104924cfaf0e53c5d60c088b78edf3c64ab874470c91c48ca219e6",
     "output/final_package/content.json": "9163c38a5624513f51358f0ab63c6efa311585a52cf4f7317390099352f5e805",
     "output/final_package/core_verification.json": "6dfa4445c92f684aef7b29671a19104a1e62e327bd0237c64574dc26aad785be",
@@ -15488,8 +15488,8 @@
     "presentation/render_final.mjs": "27d7346e8411411f13cb33c6acf1ee47fd951e9ed8c7e798e1db68ffe95e1ff7",
     "presentation/verify.py": "503c1dfbad9173df45eb2cfcb21ba9991c6c0243c5a3845680bff09f96fa2850",
     "PROJECT_GUIDE.md": "a100807abb1a8c68f82c1eb9ebfc01a7d0c38ed58878055a8aac6f00906c1d4b",
-    "PROVENANCE.md": "4809f928d6e7bf241a30fa0738e0f14c9027c09ff3ded95ccbd5ec5d332acb0a",
-    "README.md": "c1996d17141efd57f487d9488086775ebeebe013d7e0efb8ab0d2347d70de541",
+    "PROVENANCE.md": "d05fe1791e75a9ec8dc6839d1185de364214f6502a14dbb310d9d600808fbada",
+    "README.md": "851c1c2daf6f71ae31aafda9ccdc5cb77486f605b097a0511484cde9fc0061b7",
     "REPRODUCTION.md": "7ab26c01188ea57d79f677d644171c8b1be65da46afaf5b98e07c76ce052b63c",
     "requirements.lock.txt": "2e9df9c27691c3b8743832c5cc66b2e64ed8a74d90924e7304882349962fd548",
     "requirements.txt": "bcba625e1371b3fa4ba1b096e226616905ae08c79884c8b0b2a1c0d83d1cf8b9",
@@ -15500,10 +15500,10 @@
     "scripts/assessments/finalize_presentation.mjs": "947ef72f12b2661578ed8760ab945abdb147f0fa3e58e217a0d8d86056f75e85",
     "scripts/assessments/package.py": "8f8484ec0b55af15704b2cbd25bf679476b2c74fb21ad9e353ae413e0f5fa774",
     "scripts/assessments/presentation.mjs": "cb87637ac141a525c502e338d1ccb15ee322bef72758927757a0d6b3b245adaf",
-    "scripts/assessments_visual/build_written.py": "9b9d766df37496bcc33c53540fd891f6204bc6e47f3ea474f471148aee5b3b1a",
+    "scripts/assessments_visual/build_written.py": "970832001a6730236bde81f41839bfa0c083750e9f78bb3401fccdb49ab46c6d",
     "scripts/assessments_visual/finalize_presentation.mjs": "bd7d8d3e99697e49988a092b69b498f109dd2cd4ccf3c3a1c5d81ab5b8589b9f",
-    "scripts/assessments_visual/presentation.mjs": "b98b7bde0758ef9e283aa98a94faf3e6fa685942aeede15a6e80ff2488b59646",
-    "scripts/assessments_visual/verify.py": "3ff8369f9a23636cdccb1f6ea6577e75eeb3c73a828967f25cb5833d41b0a27c",
+    "scripts/assessments_visual/presentation.mjs": "e4e04373b0ce866e4b41eff1b2e2e7022e3761ace2c5fd9478c514f912ae8130",
+    "scripts/assessments_visual/verify.py": "db421e052f8d77802c5a4b8b383cfeef374adbf3d71f5db1e1cac3c23c16c6c6",
     "scripts/build_final_presentation.ps1": "970638d43c833558c0456f0a165fbfa6bf8ced4922b31d6a445566a47d08d1f2",
     "scripts/build_paper_v2_presentation.ps1": "848a4b262ae20e65f9f63599f40a48073cfc24cd4be13dc03558bbb17d72abd4",
     "scripts/export_dataset.py": "d9b69d337888b6e3e0699f01f0a034ce7d3814a7dce4731fb7036f22738ddebb",
@@ -15512,7 +15512,7 @@
     "scripts/verify_public_release.py": "f88bb58aaf1f97c9ed192b94b1977ff091348035b50844df7eb03aa62d5cb6c7",
     "sources/README.md": "eaee1285ef874b819611e15660e305cbbc7c531edcc40ba8adb4b39a7b004902",
     "sources/source_hashes.json": "f9859bfe160aef90592153184c846232a11ce3366cd7ff9f63930cc986bb83dc",
-    "SUBMISSION.md": "4e7bf63527e510632a3b0fe72564b09bc7f5cd7355b9eedef65989ff795988b6",
+    "SUBMISSION.md": "fbcc21b4eca373d0b559449508ebcfc80ca5d2fda96c94ba7cb96bb37042010f",
     "tests/test_analysis.py": "c7b61d23b3988d996684a7805d8dda60a6c3dd6fa0a4cc5d16a1b69b2b2c4ef6",
     "tests/test_paper_analysis.py": "9d61c1c19b6ce9e7f429158da78021f8d9cb5389d34c78247fbd34137ea7e4fa",
     "tests/test_paper_typesetting.py": "a7cfbbe3dc172ac1b1f3f76aa40fb7cf1e71a464990dd805d333d77284511f86",
@@ -15524,6 +15524,49 @@
     "verification/full_reproduction.json": "6978e8ce56f95af6119e809ff91538d0514fb48a61d7ad8c0d25510837043b2b",
     "verification/README.md": "1ce67919ef2921e5401386d4b24680ddfbd8426d5703a6490d4af825714eb258",
     "verification/tests.txt": "55a8ad568d188e5a95248e89ca22b487629def94619185e0e1913ce9c19d2320",
-    "verification/.gitattributes": "fd13dad2ecae9b5cdde18e56b396b87ce73a5e3d9c05455bb00a1afc2c424106"
-  }
+    "verification/.gitattributes": "fd13dad2ecae9b5cdde18e56b396b87ce73a5e3d9c05455bb00a1afc2c424106",
+    "configs/submission_authors.json": "5cc803fe59315d75be5751d6a0291f0a0569980e9ee534436bce554e947fc6c5"
+  },
+  "revisions": [
+    {
+      "date": "2026-10-22",
+      "source_commit": "68c238df87f365bd6821cda5a3ccf6bbc14f9bef",
+      "scope": "Team author names and registration numbers in current submissions; scientific data unchanged",
+      "authors": [
+        {
+          "name": "Vihaan Jinesh Jain",
+          "registration_number": "25BYB0103"
+        },
+        {
+          "name": "Kaashvi Goel",
+          "registration_number": "25BYB0129"
+        },
+        {
+          "name": "Gaurav Kansal",
+          "registration_number": "25BYB0157"
+        }
+      ],
+      "changed_files": [
+        "SUBMISSION.md",
+        "configs/submission_authors.json",
+        "output/assessments_visual/Assessment10_Visual.pdf",
+        "output/assessments_visual/Assessment10_Visual.pptx",
+        "output/assessments_visual/Assessment10_Visual_Explanation.pdf",
+        "output/assessments_visual/Assessment9_IEEE_Visual_Report.pdf",
+        "output/assessments_visual/Assessment9_Visual_LaTeX_Source.zip",
+        "output/assessments_visual/README.md",
+        "output/assessments_visual/assessment9_ieee/TEMPLATE_SOURCE.md",
+        "output/assessments_visual/assessment9_ieee/main.log",
+        "output/assessments_visual/assessment9_ieee/main.pdf",
+        "output/assessments_visual/assessment9_ieee/main.tex",
+        "output/assessments_visual/manifest.json",
+        "output/assessments_visual/visual_review.json",
+        "scripts/assessments_visual/build_written.py",
+        "scripts/assessments_visual/presentation.mjs",
+        "scripts/assessments_visual/verify.py",
+        "README.md",
+        "PROVENANCE.md"
+      ]
+    }
+  ]
 }
